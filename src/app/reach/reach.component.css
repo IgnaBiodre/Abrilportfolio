@@ -26,10 +26,21 @@
     bottom: 0;
     right: 0;
 }
-.btn-reddit {
-    color: #000;
-    background-color: #eff7ff;
+.btn-github {
+    color:white;
+    background-color: #333;
     border-color: rgba(0,0,0,0.2);
+}
+.linked{ 
+    color: black;
+    border-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 5px;
+    
+}
+.linked:hover{
+    cursor: pointer;
 }
 .fstyle{
     margin-top: 20px;
