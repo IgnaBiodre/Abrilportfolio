@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5, h6{
 }
 .p-tag{
   background: #989898;
-  color: #fff;
+  color: rgb(185, 156, 156);
   padding: 5px 10px;
   font-size: 14px;
 }
@@ -61,12 +61,16 @@ h1, h2, h3, h4, h5, h6{
 /* Wrapper Class*/
 .p-wrapper{
     position: relative;
+     
 }
   .p-wrapper::before {
+    margin: 3rem;
     content: '';
     background: #336600;
-    height: 100vh;
-    width: 43vw;
+    height: 69vh;
+    width: 44vw;
     position: absolute;
     z-index: -1;
+    margin-left: 1rem;
+    
   }

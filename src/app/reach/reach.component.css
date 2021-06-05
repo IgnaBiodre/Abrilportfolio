@@ -50,3 +50,6 @@
 .submit{
     background-color: #333333;
 }
+.container{
+    display: flex;
+}
