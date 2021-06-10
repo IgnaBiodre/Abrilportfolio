@@ -12,6 +12,7 @@ import { FormsModule }   from '@angular/forms';
 
 
 import { FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FontAwesomeModule} from '@fortawesome/angular-fontawesome';
     HeaderComponent,
     HomeComponent,
     AboutComponent,
-    ReachComponent
+    ReachComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

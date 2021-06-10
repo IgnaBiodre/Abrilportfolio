@@ -6,7 +6,9 @@
         <!-- Github -->
         <a class="btn btn-github m-1" href="" role="button">
           <i class="fa fa-github"></i> Visit My Github</a>
-        <i class="fa fa-2x fa-linkedin linked" aria-hidden="true"></i>
+       <a class="btn btn-btn-linkedin m-1" href="" role="button">
+        <i class="fa fa-linkedin-square">Or my linkedin</i></a>
+        
       </div>
       <div class="col-sm-5">
         <span class="p-tag">Contact</span>
@@ -14,17 +16,15 @@
         <form (ngSubmit)="submit()">
           <!-- name -->
           <div class="field">
-            <input type="text" class="input form-control fstyle" placeholder="Your Name" required minlength="3">
+            <input type="text" class="input form-control fstyle" placeholder="Tu nombre" required minlength="3">
           </div>
           <!-- email -->
           <div class="field">
-            <input type="email" class="input form-control fstyle" placeholder="Your Email" required email>
+            <input type="email" class="input form-control fstyle" placeholder="Tu Email" required email>
           </div>
           <!-- message -->
           <div class="field">
-            <textarea class="textarea form-control fstyle" placeholder="What's on your mind?" required>
-              contenido
-            </textarea>
+            <textarea class="textarea form-control fstyle" placeholder="Escribe un mensaje" required></textarea>
           </div>
           <button type="submit" class="btn btn-primary mb-2 submit">Submit</button>
         </form>
