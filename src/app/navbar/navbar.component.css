@@ -3,6 +3,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background: #fafafa
+    
 }
 
 p {
@@ -20,11 +21,11 @@ a:focus {
     transition: all 0.3s
 }
 
-
 .wrapper {
     display: flex;
     width: 100%;
-    align-items: stretch
+    align-items: stretch;
+    margin-left: 1.5rem; 
 }
 
 #sidebar {
@@ -109,8 +110,4 @@ a.download:hover {
     #sidebarCollapse span {
         display: none
     }
-}
-.hr{
-    weight: 200;
-    width: 2px;
 }
