@@ -8,9 +8,9 @@
 }
 .underline{
     background: color #000;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    position: relative;
+    top: 2.5rem;
+    left: 20.5rem;
     border-bottom: 1px solid;
     width:300px;  
 }

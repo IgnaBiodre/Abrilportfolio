@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
 
 
 @Component({
@@ -6,14 +6,13 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './reach.component.html',
   styleUrls: ['./reach.component.css']
 })
-export class ReachComponent implements OnInit {
-  
+export class ReachComponent {
+ 
   constructor() {}
-   ngOnInit(): void {
-  }
-
+   
   submit(){
 
   }
 
+  
 }
