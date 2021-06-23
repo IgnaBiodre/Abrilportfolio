@@ -8,7 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ReachComponent } from './reach/reach.component';
-import { FormsModule }   from '@angular/forms';
+import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
 
 
 import { FontAwesomeModule} from '@fortawesome/angular-fontawesome';
@@ -28,7 +28,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     AppRoutingModule,
     NgbModule,
     FontAwesomeModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
    ],
   providers: [],
   bootstrap: [AppComponent]

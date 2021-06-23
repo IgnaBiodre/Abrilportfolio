@@ -1,38 +1,52 @@
-<section class="p-wrapper">
-  <div class="container">
-     <div class="d-flex flex-row">  
+<div class="container">
+  <div class="d-flex flex-row">
+    <div class="col-sm-5">
+      <div class="reachtext h1">Enviame un mensaje o conectemos por las redes</div>
+      <!-- Github -->
+      <a class="btn btn-github m-1" href="https://github.com/IgnaBiodre" role="button">
+        <i class="fa fa-github">
+        </i>
+        Visit My Github
+      </a>
+      <a class="btn btn-btn-linkedin m-1" href="https://www.linkedin.com/in/ignacio-mendez-334274183/" role="button">
+        <i class="fa fa-linkedin-square">
 
-      <div class="col-sm-5">
-        <div class="reachtext h1">Enviame un mensaje o conectemos por las redes</div>
-        <!-- Github -->
-        <a class="btn btn-github m-1" href="https://github.com/IgnaBiodre" role="button">
-          <i class="fa fa-github"></i> Visit My Github</a>
-       <a class="btn btn-btn-linkedin m-1" href="https://www.linkedin.com/in/ignacio-mendez-334274183/" role="button">
-        <i class="fa fa-linkedin-square">Or my linkedin</i></a>
-        
-      </div>
-      <div class="col-sm-7">
-        <span class="p-tag">Contact</span>
-        <h1 class="mt-3">Reach</h1>
-        <form (ngSubmit)="submit()">
-          <!-- name -->
-          <div class="field">
-            <input ng-model="form.name"type="text" class="input form-control fstyle" placeholder="Tu nombre" required minlength="3">
-          </div>
-          <!-- email -->
-          <div class="field">
-            <input ng-model="form.email" type="email" class="input form-control fstyle" placeholder="Tu Email" required email>
-          </div>
-          <!-- message -->
-          <div class="field">
-            <textarea ng-model="form.message"class="textarea form-control fstyle" placeholder="Escribe un mensaje" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary mb-2 submit">Submit</button>
-        </form>
-        <a href='/Home' class="nextpage">Home <img src="assets/img/rm_arw_rgt.png" alt="icon" width="15" class="ml-2"></a>
-        <div class="underline"></div>
-      </div>
-     </div>
+        </i>
+        Or my linkedin
+      </a>
     </div>
-  
-</section>
+
+    <div class="col-sm-7">
+      <span class="p-tag">
+        Contact
+      </span>
+      <h1 class="mt-3">
+        Reach
+      </h1>
+      <form [formGroup]="reachForm" (ngSubmit)="submit()">
+        <!-- name -->
+        <div class="field">
+          <input id="name" formControlName="name"  type="text" formControlName="name" class="input form-control fstyle" placeholder="Tu nombre"
+            required minlength="3"> 
+        </div>
+        <!-- email -->
+        <div class="field">
+          <input id="email" formControlName="email" type="email" class="input form-control fstyle" formControlEmail="email"
+            placeholder="Tu Email" required email>
+        </div>
+        <!-- message -->
+        <div class="field">
+          <textarea id="message" formControlName="message" class="textarea form-control fstyle"
+            placeholder="Escribe un mensaje" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary mb-2 submit">
+          Submit
+        </button>
+      </form>
+      <a href='/Home' class="nextpage">Home <img src="assets/img/rm_arw_rgt.png" alt="icon" width="15" class="ml-2">
+      </a>
+      <div class="underline">
+      </div>
+    </div>
+  </div>
+</div>

@@ -111,3 +111,23 @@ a.download:hover {
         display: none
     }
 }
+
+.navbar-toggler-icon{
+    background-color: black;
+}
+/* .l-draw span{
+    width: 40px;
+    height: 6px;
+    background: #000;
+    display: block;
+    margin-bottom: 5px;
+    }
+    .l-draw span:nth-child(2){
+        width: 10px;
+    }
+    .l-draw span:last-child{
+        margin-bottom: 0;
+    }
+.l-draw{
+    cursor: pointer;
+} */
