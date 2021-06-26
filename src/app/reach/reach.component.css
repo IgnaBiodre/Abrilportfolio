@@ -15,33 +15,24 @@
 }
 .underline{
     background: color #000;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    position: relative;
+    top: 2.5rem;
+    left: 20.5rem;
     border-bottom: 1px solid;
     width:300px;  
 }
-.nextpage{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
+
 .btn-github {
     color:white;
     background-color: #333;
     border-color: rgba(0,0,0,0.2);
 }
-.linked{ 
-    color: black;
-    border-color: rgba(0, 0, 0, 0);
-    position: absolute;
-    margin-left: 50px;
-    margin-top: 5px;
-    
+.btn-btn-linkedin {
+    color:white;
+    background-color: #333;
+    border-color: rgba(0,0,0,0.2);
 }
-.linked:hover{
-    cursor: pointer;
-}
+
 .fstyle{
     margin-top: 20px;
     margin-bottom: 10px;

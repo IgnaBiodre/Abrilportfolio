@@ -1,18 +1,23 @@
 import { Component, OnInit } from '@angular/core';
+import { TextinputService } from '../textinput.service';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
+
 export class HomeComponent implements OnInit {
-   
+
   parrafo: string = '';
 
-  constructor() { }
+  constructor(private getLorem: TextinputService) { }
 
-  ngOnInit(): void {
-    this.parrafo = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim explicabo ullam quasi deserunt iusto corrupti recusandae doloremque quo,magnam accusantium vero impedit optio, odio officia, rerum ipsa culpa fugiat quisquam."
+  ngOnInit() {
+
+    this.getLorem.getLorem().subscribe(
+      lorem => this.parrafo = lorem[0]
+    );
   }
 
 }
