@@ -9,7 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ReachComponent } from './reach/reach.component';
 import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
-
+import { HttpClientModule } from '@angular/common/http';
 
 import { FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -21,10 +21,12 @@ import { NavbarComponent } from './navbar/navbar.component';
     HomeComponent,
     AboutComponent,
     ReachComponent,
-    NavbarComponent
+    NavbarComponent,
+    
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     NgbModule,
     FontAwesomeModule,
