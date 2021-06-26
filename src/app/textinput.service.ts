@@ -12,6 +12,11 @@ export class TextinputService {
   constructor(private http: HttpClient) { }
 
   getLorem(): Observable<Array<string>> {
-    return this.http.get<Array<string>>('https://baconipsum.com/api/',{params:{'start-with-lorem': 1,type:'meat-and-filler'}});
+    return this.http.get<Array<string>>('https://baconipsum.com/api/', {
+      params: {
+        'start-with-lorem': 1,
+        type: 'meat-and-filler'
+      }
+    });
   }
 }

@@ -8,17 +8,16 @@ import { TextinputService } from '../textinput.service';
 })
 
 export class HomeComponent implements OnInit {
-   
+
   parrafo: string = '';
 
-  constructor(private getLorem : TextinputService) { }
+  constructor(private getLorem: TextinputService) { }
 
   ngOnInit() {
-    
-    this.getLorem.getLorem().subscribe(
-       lorem => this.parrafo = lorem[0]   
-       );
 
+    this.getLorem.getLorem().subscribe(
+      lorem => this.parrafo = lorem[0]
+    );
   }
 
 }

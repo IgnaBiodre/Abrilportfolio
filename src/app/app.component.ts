@@ -11,7 +11,4 @@ import { ReachComponent } from './reach/reach.component';
 })
 export class AppComponent {
   title = 'portfolio-mockup';
-
-
- 
 }
