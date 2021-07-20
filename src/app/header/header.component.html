@@ -1,27 +1,20 @@
 <header>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-10 p-flex p-flex-align-center p-flex-j-sb">
-        
-        <app-navbar></app-navbar>
-        
+  <div class="p-wrapper">
       
-        <ul >
-          
-          <li class="col-sm-4">
-            <a href="#"[routerLink]="['/Home']" routerLinkActive=is-active>Home</a>
+         <ul class="row-sm-12 d-flex">
+
+          <li>
+            <a href="#" [routerLink]="['/Home']" routerLinkActive=is-active>Home</a>
           </li>
           <li>
             <a href="#" [routerLink]="['/About']" routerLinkActive=is-active>About</a>
           </li>
-          
+
           <li>
             <a href="#" [routerLink]="['/Reach']" routerLinkActive=is-active>Contact</a>
           </li>
-        
-        </ul>
-      </div>
-    </div>
-  </div>
 
+        </ul>
+      
+    </div>
 </header>

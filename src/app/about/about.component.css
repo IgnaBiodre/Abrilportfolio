@@ -6,11 +6,21 @@
     background-position: top;
     background-repeat: no-repeat;
 }
-.underline{
-    background: color #000;
-    position: relative;
-    top: 2.5rem;
-    left: 20.5rem;
-    border-bottom: 1px solid;
-    width:300px;  
+.fa-css3{
+    color:#4495d4;
+}
+.fa-html5{
+ color:#df5018;
+}
+.bi-bootstrap-fill{
+color:#5b4282;
+}
+.fa-angular{
+    color:#e23237;
+}
+.h5color{
+    color:#777777;
+}
+.d-flex{
+    flex-wrap: wrap;
 }
