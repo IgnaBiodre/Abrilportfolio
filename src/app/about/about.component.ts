@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
   parrafo: string =
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit Enim explicabo ullam quasi deserunt iusto corrupti recusandae doloremque quo, magnam accusantium vero impedit optio, odio officia, rerum ipsa culpa fugiat quisquam.';
+    'Soy estudiante de programación de la ciudad de Mar del Plata tengo 22 años. Este sitio es mi primer proyecto dónde me enfoqué en desarrollar mis habilidades aprendiendo tecnolgías nuevas';
 
   constructor() {}
 
