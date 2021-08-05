@@ -58,9 +58,9 @@ export class ReachComponent implements OnInit {
       this.http.post<HttpMailResponseDto>("https://script.google.com/macros/s/AKfycbzuDSIY_r-M32X5hMjEWw1qnSf_FxmgP_E6Y8b-Npn6b2fzRkmYwKznLFXSjrLZwtky/exec", formData).subscribe(
         (response) => {
           if (response.result == "success") {
-            this.responseMessage = "Thanks for the message! i'll get back to you soon!";
+            this.responseMessage = "Gracias por tu mensaje, me pondre en contacto pronto";
           } else {
-            this.responseMessage = "Oops! Something went wrong... try again.";
+            this.responseMessage = "Oops! Algo salió mal, intentá de nuevo.";
           }
           this.reachForm.enable();
           this.submitted = true;
@@ -68,7 +68,7 @@ export class ReachComponent implements OnInit {
           console.log(response);
         },
         error => {
-          this.responseMessage = "Oops! An error ocurred... try again";
+          this.responseMessage = "Oops! Algo salió mal, intentá de nuevo";
           this.reachForm.enable();
           this.submitted = true;
           this.isloading = false;
