@@ -25,13 +25,15 @@ header ul li a {
     color: #000000;
     font-weight: 500;
     position: relative;
+    left: 20px;
+    font-family: Verdana;
 }
 
 header ul li a:hover::after, header ul li a.is-active::after {
     content: '';
-    background: #360;
-    height: 9px;
-    position: absolute; 
+    background: #5b9b1c;
+    height: 4px;
+    position: absolute;
     left: 1px;
     z-index: -1;
     bottom: 0;

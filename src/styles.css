@@ -5,7 +5,7 @@
 
 @media (max-width: 540px) {
   .container {
-    background-color: #336600;
+    background-color: #5b9b1c;
   }
   .bgcolor {
     display: none;
@@ -37,10 +37,12 @@ h4,
 h5,
 h6 {
   font-weight: 700;
+  font-family: Verdana;
 }
+
 /*Common*/
 .p-des {
-  color: #777777;
+  color: #373737;;
   width: 80%;
 }
 .p-tag {
@@ -48,6 +50,7 @@ h6 {
   color: rgb(255, 255, 255);
   padding: 5px 10px;
   font-size: 14px;
+  font-family: verdana;
 }
 .p-flex {
   display: flex;
@@ -84,7 +87,7 @@ h6 {
 .bgcolor {
   position: absolute;
   z-index: -1000;
-  background: #336600;
+  background: #5b9b1c;
   height: calc(100vh - 56px);
   width: 45vw;
 }

@@ -9,15 +9,14 @@ import { TextinputService } from '../textinput.service';
 
 export class HomeComponent implements OnInit {
 
-  parrafo: string = '';
+  parrafoapi: string = '';
+  parrafo: string = 'Soy estudiante de programación de la ciudad de Mar del Plata, tengo 22 años. Este sitio es mi primer proyecto en el que me enfoqué en desarrollar mis habilidades aprendiendo tecnologías nuevas.';
 
-  constructor(private getLorem: TextinputService) { }
 
-  ngOnInit() {
+  constructor() { }
 
-    this.getLorem.getLorem().subscribe(
-      lorem => this.parrafo = lorem[0]
-    );
+  ngOnInit(): void {
+
   }
 
 }

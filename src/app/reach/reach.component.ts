@@ -48,7 +48,7 @@ export class ReachComponent implements OnInit {
     if (this.reachForm.status == "VALID" /* && this.honeypot.value == "" */) {
       this.reachForm.disable();
       let formData = new FormData();
-      
+
       formData.append("name", this.reachForm.get("name")?.value);
       formData.append("email", this.reachForm.get("email")?.value);
       formData.append("message", this.reachForm.get("message")?.value);
@@ -81,7 +81,7 @@ export class ReachComponent implements OnInit {
 
 interface HttpMailResponseDto {
   result: string;
-  data : {
+  data: {
     name: string;
     email: string;
     message: string;
