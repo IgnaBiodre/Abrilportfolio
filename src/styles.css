@@ -1,82 +1,93 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 @import "~../node_modules/bootstrap/dist/css/bootstrap.min.css";
 @import "~font-awesome/css/font-awesome.css";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
 
-header{
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
+@media (max-width: 540px) {
+  .container {
+    background-color: #5b9b1c;
+  }
+  .bgcolor {
+    display: none;
+  }
 }
+
 body {
-    margin:0;
-    padding:0; 
-    font-size: 18px;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+p {
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+a,
+a:hover {
+  text-decoration: none;
+  color: #000;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  font-family: Verdana;
 }
 
-p{
- margin:0;
-}
-ul{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-a, a:hover{
-  text-decoration: none;
-  color: #000; 
-}
-h1, h2, h3, h4, h5, h6{
-  font-weight: 700;
-}
 /*Common*/
-.p-des{
-  color: #777777;
+.p-des {
+  color: #373737;;
   width: 80%;
 }
-.p-tag{
+.p-tag {
   background: #989898;
   color: rgb(255, 255, 255);
   padding: 5px 10px;
   font-size: 14px;
+  font-family: verdana;
 }
-.p-flex{
+.p-flex {
   display: flex;
 }
-.p-flex-align-center{
+.p-flex-align-center {
   align-items: center;
 }
-.p-flex-j-sb{
+.p-flex-j-sb {
   justify-content: space-between;
 }
-.p-cursor{
+.p-cursor {
   cursor: pointer;
 }
-.nextpage{
+.nextpage {
   position: absolute;
   right: 0;
   color: #000;
   font-size: 20px;
   font-weight: 600;
+  margin-top: 2.5rem;
+  border-bottom: 1px solid #000;
 }
-.nextpage img{
-  transition: all .5s;
+.nextpage img {
+  transition: all 0.5s;
   transform: translateX(0);
 }
-.nextpage:hover img{
+.nextpage:hover img {
   transform: TranslateX(5px);
 }
 /* Wrapper Class*/
-.p-wrapper{
-    position: relative;
-     
+.p-wrapper {
+  position: relative;
 }
-  .p-wrapper::before {
-    margin: 1rem;
-    margin-top: 4rem;
-    content: '';
-    background: #336600;
-    height: 70vh;
-    width: 44vw;
-    position: absolute;
-    z-index: -1;
-        
-    }
+.bgcolor {
+  position: absolute;
+  z-index: -1000;
+  background: #5b9b1c;
+  height: calc(100vh - 56px);
+  width: 45vw;
+}
